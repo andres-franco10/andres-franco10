@@ -21,7 +21,7 @@
     }
     
     &:checked ~ .search-bar .menu-toggle__label {
-        background-color: yellow;
+        background-color: #CAD2C5;
     }
 
 }
@@ -54,7 +54,7 @@
     &__nav-link {
         display: block;
         background-color: #52796F;
-        color: #fff;
+        color: #CAD2C5;
         padding: 1em 2em;
         text-decoration: none;
     }
