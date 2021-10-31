@@ -26,11 +26,11 @@
     
     }
     
-    &:nth-child(even) {
+    &:nth-child( even ) {
         background-image: linear-gradient(to top, #aaafad 0%, #2F3E46 30%);
     }
     
-    &:nth-child(odd) {
+    &:nth-child( odd ) {
         background-image: linear-gradient(to top, #2F3E46 0%, #aaafad 30%);
     }
 
@@ -101,7 +101,4 @@
     
     }
 
-
-
-}
 
