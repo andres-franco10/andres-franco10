@@ -127,7 +127,7 @@ body {
             NAV BAR
 ***********************************/
 .nav-bar {
-  background-color: mediumturquoise;
+  background-color: #2F3E46;
 }
 .nav-bar__nav-list {
   display: flex;
@@ -141,11 +141,11 @@ body {
 }
 .nav-bar__nav-item {
   text-align: center;
-  background-color: pink;
+  background-color: #354F52;
 }
 .nav-bar__nav-link {
   display: block;
-  background-color: purple;
+  background-color: #52796F;
   color: #fff;
   padding: 1em 2em;
   text-decoration: none;
@@ -160,7 +160,7 @@ body {
             SEARCH BAR
 ***********************************/
 .search-bar {
-  background-color: olivedrab;
+  background-color: #84A98C;
   display: flex;
   justify-content: space-between;
 }
@@ -177,10 +177,10 @@ body {
   justify-content: center;
 }
 .search-bar__form-label {
-  background-color: greenyellow;
+  background-color: #CAD2C5;
 }
 .search-bar__form-search {
-  background-color: deeppink;
+  background-color: #CAD2C5;
   width: 70%;
 }
 .search-bar__form-submit {
@@ -196,7 +196,7 @@ body {
 ***********************************/
 .menu-toggle {
   display: none;
-  background-color: red;
+  background-color: #CAD2C5;
   flex: 0 0 3em;
   position: relative;
   cursor: pointer;

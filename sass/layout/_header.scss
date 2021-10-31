@@ -30,7 +30,7 @@
             NAV BAR
 ***********************************/
 .nav-bar {
-    background-color: mediumturquoise;
+    background-color: #2F3E46;
 
     &__nav-list {
         display: flex;
@@ -48,12 +48,12 @@
 
     &__nav-item {
         text-align: center;
-        background-color: pink;
+        background-color: #354F52;
     }
 
     &__nav-link {
         display: block;
-        background-color: purple;
+        background-color: #52796F;
         color: #fff;
         padding: 1em 2em;
         text-decoration: none;
@@ -72,7 +72,7 @@
             SEARCH BAR
 ***********************************/
 .search-bar {
-    background-color: olivedrab;
+    background-color:#84A98C;
     display: flex;
     justify-content: space-between;
 
@@ -93,11 +93,11 @@
     }
     
     &__form-label {
-        background-color: greenyellow;
+        background-color: #CAD2C5;
     }
     
     &__form-search {
-        background-color: deeppink;
+        background-color: #CAD2C5;
         width: 70%;
     }
     
@@ -120,7 +120,7 @@
 ***********************************/
 .menu-toggle {
     display: none;
-    background-color: red;
+    background-color: #CAD2C5;
     flex: 0 0 3em;
     position: relative;
     cursor: pointer;
