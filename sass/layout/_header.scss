@@ -87,7 +87,7 @@
     padding-left: 1em;
     color: rgb(80, 61, 61);
 
-    &__name {color: #4CA686}
+    &__name {color: #4CA686;}
 
     &__logo-container,
     &__form-container {
@@ -141,12 +141,43 @@
         cursor: pointer;
     }
 
+    @media (max-width: 425px) {
+        &__name {
+            display: none;
+        }
+        &__form-container {
+            width: 12%;
+        }
+        &__logo-container {
+            height: 2em;
+            align-self: flex-start;
+        }
+    }
+
+    @media (max-width: 375px) {
+       &__carrito-container {
+           width: 2em;
+           padding-left: 10px;
+        }
+    }
+
     @media (max-width: 320px) {
-        & {}
+       padding-left: 0;
+
+       &__form-search{
+           width: 11.5em;
+        padding-left: 0;
+       }
+
+       &__form-container{
+           padding-left: 0;
+       }
+       &__carrito-container {
+        width: 2em;
+        padding-left: 3px;
+        margin-left: .6em;
      }
-    
-
-
+    }
 }
 
 
@@ -199,6 +230,4 @@
             display: block;
         }    
     }
-
 }
-
