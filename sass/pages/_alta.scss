@@ -1,0 +1,14 @@
+.body-form {
+    background-color: #f7f1f1;
+}
+
+.search-bar__name-mobile {
+    display: none;
+    color: #4CA686;
+    margin-bottom: 0;
+
+    @media (max-width: 425px) {
+        & {display:block;}
+    }
+}
+

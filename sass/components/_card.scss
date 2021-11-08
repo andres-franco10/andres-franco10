@@ -1,10 +1,11 @@
+
 .card {
     text-decoration: none;
     outline: none;
     flex-grow: 1;
     width: 220px;
     max-width: 300px;
-    height: 460px;
+    height: 410px;
     overflow: auto;
     color: #777777;
     box-shadow: 0 1px 5px rgba(0, 0, 0, .2), 0 0 3px rgba(0, 0, 0, .4);
@@ -13,6 +14,7 @@
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
+    margin-bottom: 1.5em;
 
     &:hover,
     &:focus {
@@ -23,7 +25,6 @@
         -webkit-transform-origin: bottom;
         transform-origin: bottom;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    
     }
     
     &__image-container {
@@ -55,6 +56,10 @@
         padding: 1em;
     }
     
+    @media (max-width: 768px) {
+        & {height: 429px;}
+    }
+
     }
 
     .card__price {text-align: center;

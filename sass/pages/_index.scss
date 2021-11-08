@@ -1,6 +1,7 @@
 .section-cards {
-    background-color: #f1f2f3;
+    background-color: #f7f1f1;
     padding: 2em;
+    padding-top: 0;
 }
 
 .section-cards__header {padding: 1em;}
@@ -10,4 +11,15 @@
     flex-wrap: wrap;
     gap: 1em;
     justify-content: center;
+}
+
+.search-bar__name-mobile {
+    display: none;
+    color: #4CA686;
+    margin-bottom: 0;
+    background-color: #f7f1f1;
+
+    @media (max-width: 425px) {
+        & {display:block;}
+    }
 }
