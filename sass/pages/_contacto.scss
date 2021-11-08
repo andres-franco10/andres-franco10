@@ -1,15 +1,24 @@
 .body-form {
-    background-color: #f7f1f1;
+    background-color: #f7f1f1
 }
 
 .search-bar__name-mobile {
     display: none;
     color: #4CA686;
     margin-bottom: 0;
-    text-align: center;
 
     @media (max-width: 425px) {
+        
         & {display:block;}
+    
+    }
+}
+
+.form__contacto {
+    @media (max-width: 425px) {
+        
+        & {width: 20%;}
+    
     }
 }
 
