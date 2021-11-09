@@ -89,20 +89,23 @@
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 6px;
+
+        &:hover {
+            background-color: #349674;
+        }
+        
+        &:focus {
+            box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+            outline: none;
+        }
+        
+        &:active {
+            background-color: #298e46;
+            box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+        }
+
     }
     
-    .card__button:hover {
-        background-color: #349674;
-    }
-    
-    .card__button:focus {
-        box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
-        outline: none;
-    }
-    
-    .card__button:active {
-        background-color: #298e46;
-        box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
-    }
+
 
 

@@ -2,9 +2,12 @@
     background-color: #f7f1f1;
     padding: 2em;
     padding-top: 0;
+
+    &__header 
+    {padding: 1em;}
 }
 
-.section-cards__header {padding: 1em;}
+
 
 .cards-container {
     display: flex;

@@ -10,7 +10,7 @@
     margin-right: auto;
     margin-top: 1em;
     margin-bottom: 2em;
-    width: fit-content;
+    width: 70%;
     display: flex;
     flex-direction: column;
     padding: 1.5em;
@@ -62,47 +62,82 @@
         box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 7px;
        
     }
-}
 
-
-.form-fieldset {
-    text-align: center;
-    padding: .5em;
-    margin-top: 1em;
-    border-radius: 4px;
-    background-color: #f7f1f1;
-    border: #777777 2px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, .2), 0 0 3px rgba(0, 0, 0, .4);
-    border-radius: 5px;
-
-    &:hover,
-    &:focus {
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;       
+    &__fieldset {
+        text-align: center;
+        padding: .5em;
+        margin-top: 1em;
+        border-radius: 4px;
+        background-color: #f7f1f1;
+        border: #777777 2px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, .2), 0 0 3px rgba(0, 0, 0, .4);
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+    
+    
+        &:hover,
+        &:focus {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;       
+        }
     }
-}
 
-.form-select {
-    background-color: #f7f1f1;
-    border: 2px inset #4CA686;
-    height: 2em;
-    border-radius: 4px;
-}
+    &__select {
+        background-color: #f7f1f1;
+        border: 2px inset #4CA686;
+        height: 2em;
+        border-radius: 4px;
+    }
+    
+    &__legend{
+        background-color: #f7f1f1;
+        border: #777777 2px thin;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, .2), 0 0 3px rgba(0, 0, 0, .4);
+        border-radius: 5px;
+        padding: 2px;
+        position: relative;
+        bottom: 4px;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    
+    &__label--categoria {
+        cursor: pointer;
+    }
 
-.form-legend{
-    background-color: #f7f1f1;
-    border: #777777 2px thin;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, .2), 0 0 3px rgba(0, 0, 0, .4);
-    border-radius: 5px;
-    padding: 2px;
-    position: relative;
-    bottom: 4px;
-    padding-left: 3em;
-    padding-right: 3em;
-}
-
-.form__label--categoria {
-    cursor: pointer;
-
+    &__submit {
+        background-color: #4CA686;
+        border: 1px solid rgba(27, 31, 35, .15);
+        border-radius: 6px;
+        box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+        color: #fff;
+        cursor: pointer;
+        font-family: "Segoe UI",Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        padding: 6px 16px;
+        text-align: center;
+        text-decoration: none;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 6px;
+        margin-top: 1em;
+        &:hover {
+            background-color: #349674;
+        }
+        
+        &:focus {
+            box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+            outline: none;
+        }
+        
+        &:active {
+            background-color: #298e46;
+            box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+        }
+    }
+    
 }
 
 
@@ -110,6 +145,8 @@
     border: #777777 2px solid;
     border-radius: 4px;
     width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     &:hover,
     &:focus {
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;       
@@ -146,36 +183,14 @@ input[type='radio']:checked:after {
 }
 
 
-.form__submit {
-    background-color: #4CA686;
-    border: 1px solid rgba(27, 31, 35, .15);
-    border-radius: 6px;
-    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
-    color: #fff;
-    cursor: pointer;
-    font-family: "Segoe UI",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 20px;
-    padding: 6px 16px;
-    text-align: center;
-    text-decoration: none;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 6px;
-    margin-top: 1em;
-}
-
-.form__submit:hover {
-    background-color: #349674;
-}
-
-.form__submit:focus {
-    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
-    outline: none;
-}
-
-.form__submit:active {
-    background-color: #298e46;
-    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+@media (max-width: 425px) {
+    .form {
+        width: 90%;
+    }
+    .form__fieldset {
+        display: block;
+    }
+    input[type='file'] {
+        width: 100%;
+    }
 }

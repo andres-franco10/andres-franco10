@@ -14,32 +14,36 @@
     }
 }
 
-.form__contacto {
-    @media (max-width: 425px) {
-        
-        & {width: 20%;}
+.contact {
+    &__title {
+        margin-top: 1em;
+        text-align: center;
     
+        &__caption{
+            text-align: center;
+        }
     }
+    &__buttons {
+        margin-top: 1em;
+        display: flex;
+        justify-content: center;
+        gap: 7em;
+    }
+    &__text {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+        color: #777777;
+        text-align: center;
+    }
+    
+    &__link {
+        text-decoration: none;
+        text-transform: none;
+        color: #2DC100;
+    }
+
 }
 
-.contacto-title {
-    margin-top: 1em;
-    text-align: center;
-}
 
-.contacto-title__caption{
-    text-align: center;
-}
 
-.contact-buttons {
-    margin-top: 1em;
-    display: flex;
-    justify-content: center;
-    gap: 7em;
-}
-.contact-text {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    color: #777777;
-}
