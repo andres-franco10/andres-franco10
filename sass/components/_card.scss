@@ -25,6 +25,7 @@
         -webkit-transform-origin: bottom;
         transform-origin: bottom;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        overflow: hidden;
     }
     
     &__image-container {
@@ -37,6 +38,7 @@
     &:focus &__image-container {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px);
         clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px);
+        overflow: hidden;
     }
     
     &__image {
@@ -50,6 +52,7 @@
     &:focus &__image {
         transform: scale(1.4) rotate(5deg);
         transform-origin: center;
+        overflow: hidden;
     }
     
     &__content {

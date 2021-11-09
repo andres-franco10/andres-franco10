@@ -22,3 +22,24 @@
     }
 }
 
+.contacto-title {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.contacto-title__caption{
+    text-align: center;
+}
+
+.contact-buttons {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 7em;
+}
+.contact-text {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    color: #777777;
+}
