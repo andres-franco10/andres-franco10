@@ -28,10 +28,11 @@
                 </li>
             </ul>
         </nav>
+
         <div class="search-bar">
             <h1 class="search-bar__name" >Connecticus</h1>
             <div class="search-bar__logo-container">
-                <img src="/img/logo/logo1 (Personalizado).png" alt="logo">
+                <img src="/img/logo/logo1(Personalizado).png" alt="logo">
             </div>
             <form class="search-bar__form-container">
                 <label class="search-bar__form-label" for="busqueda"></label>
@@ -53,7 +54,8 @@
     <main class="main-form">
         <h1 class="search-bar__name-mobile">Connecticus</h1>
         <h2 class="form-title">Formulario para dar de alta los productos:</h2>
-        <form action="" method="post" target="_blank">
+
+        <form action="post">
             <fieldset class="form">
                 <label class="form__label" for="nombre">Nombre:</label>
                 <input class="form__input" type="text" name="nombre" id="nombre" required>
@@ -61,52 +63,84 @@
                 <input class="form__input" type="number" id="price" required>
                 <label class="form__label" for="stock">Stock:</label>
                 <input class="form__input" type="number" name="stock" id="stock" required>
+
                 <fieldset class="form__fieldset">
-                    <legend class="form__legend"> <label class="form__label" for="marca"></label>Marca</label></legend>
-                    <select class="form__select" name="marca" id="marca" required>Selecciona una marca
-                    <optgroup label="marca">
-                        <option value="samsung">Samsung</option>
-                        <option value="apple">Apple</option>
-                        <option value="motorola">Motorola</option>
-                        <option value="DJI">DJI</option>
-                        <option value="google">Google</option>
-                        <option value="JBL">JBL</option>
-                        <option value="sony">Sony</option>
-                        <option value="canon">Canon</option>
-                        <option value="samsung">Samsung</option>
-                        <option value="Lenovo">Lenovo</option>
-                        <option value="playstation">PlayStation</option>
-                        <option value="DH">DH</option>
-                    </optgroup>
+                    <legend class="form__legend"> 
+                        <label class="form__label" for="marca">Marca</label>
+                    </legend>
+                    <select class="form__select" name="marca" id="marca" size="1" required>
+                            <option disabled selected value="">Selecciona una marca</option>
+                            <option value="samsung">Samsung</option>
+                            <option value="apple">Apple</option>
+                            <option value="motorola">Motorola</option>
+                            <option value="DJI">DJI</option>
+                            <option value="google">Google</option>
+                            <option value="JBL">JBL</option>
+                            <option value="sony">Sony</option>
+                            <option value="canon">Canon</option>
+                            <option value="samsung">Samsung</option>
+                            <option value="Lenovo">Lenovo</option>
+                            <option value="playstation">PlayStation</option>
+                            <option value="DH">DH</option>
                     </select>
                 </fieldset>
                 
                 <fieldset class="form__fieldset">
-
                     <legend class="form__legend"> Categoria </legend>
-                    <div class="form__category"><label class="form__label--categoria" for="categoria"><input class="form__input--categoria" type="radio" name="categoria" id="categoria" value="celulares">Celulares</label></div>
-                    <div class="form__category"><label class="form__label--categoria" for="computadoras"><input class="form__input--categoria" type="radio" name="categoria" id="computadoras" value="computadora">Computadoras</label></div>
-                    <div class="form__category"><label class="form__label--categoria" for="camaras"><input class="form__input--categoria" type="radio" name="categoria" id="camaras" value="Cámaras">Cámaras</label></div>
-                    <div class="form__category"><label class="form__label--categoria" for="auriculares"><input class="form__input--categoria" type="radio" name="categoria" id="auriculares" value="auriculares">Auriculares</label></div>
-                    <div class="form__category"><label class="form__label--categoria" for="parlantes"><input class="form__input--categoria" type="radio" name="categoria" id="parlantes" value="parlantes">Parlantes</label></div>
-                    <div class="form__category"><label class="form__label--categoria" for="electrodomesticos"><input class="form__input--categoria" type="radio" name="categoria" id="electrodomesticos" value="electrodomesticos">Electrodomésticos</label></div>
-                    <div class="form__category"><label class="form__label--categoria" for="otra"><input class="form__input--categoria" type="radio" name="categoria" id="otra" value="otra">Otra</label></div>
-                
+                    <div class="form__category">
+                        <label class="form__label--categoria" for="categoria">
+                            <input class="form__input--categoria" type="radio" name="categoria" id="categoria" value="celulares">Celulares
+                        </label>
+                    </div>
+                    <div class="form__category">
+                        <label class="form__label--categoria" for="computadoras">
+                            <input class="form__input--categoria" type="radio" name="categoria" id="computadoras" value="computadora">Computadoras
+                        </label>
+                    </div>
+                    <div class="form__category">
+                        <label class="form__label--categoria" for="camaras">
+                            <input class="form__input--categoria" type="radio" name="categoria" id="camaras" value="Cámaras">Cámaras
+                        </label>
+                    </div>
+                    <div class="form__category">
+                        <label class="form__label--categoria" for="auriculares">
+                            <input class="form__input--categoria" type="radio" name="categoria" id="auriculares" value="auriculares">Auriculares
+                        </label>
+                    </div>
+                    <div class="form__category">
+                        <label class="form__label--categoria" for="parlantes">
+                            <input class="form__input--categoria" type="radio" name="categoria" id="parlantes" value="parlantes">Parlantes
+                        </label>
+                    </div>
+                    <div class="form__category">
+                        <label class="form__label--categoria" for="electrodomesticos">
+                            <input class="form__input--categoria" type="radio" name="categoria" id="electrodomesticos" value="electrodomesticos">Electrodomésticos
+                        </label>
+                    </div>
+                    <div class="form__category">
+                        <label class="form__label--categoria" for="otra">
+                            <input class="form__input--categoria" type="radio" name="categoria" id="otra" value="otra">Otra
+                        </label>
+                    </div>
                 </fieldset>
                 
                 <fieldset class="form__fieldset">
-                    <legend class="form__legend"><label class="form__label" for="foto">Foto</label></legend>
-                    <input class="form__input" type="file" name="foto" id="foto">
+                    <legend class="form__legend">
+                        <label class="form__label" for="foto">Foto</label>
+                    </legend>
+                    <input class="form__input" type="file" name="foto" id="foto" required>
                 </fieldset>
                 
                 <fieldset class="form__fieldset"> 
-                    <legend class="form__legend"><label class="form__label" for="detalles">Detalles</label></legend>
+                    <legend class="form__legend">
+                        <label class="form__label" for="detalles">Detalles</label>
+                    </legend>
                     <textarea class="form-text" name="detalles" id="detalles" cols="30" rows="10"></textarea>
                 </fieldset>
-                <fieldset class="form__fieldset">
-                    <input type="checkbox" name="envio-sin-cargo"> Envio sin cargo
-                </fieldset>
 
+                <fieldset class="form__fieldset">
+                    Envio sin cargo<input type="checkbox" name="envio-sin-cargo">
+                </fieldset>
                 <input class="form__submit" type="submit" value="Enviar">
             </fieldset>
         </form>
@@ -115,19 +149,28 @@
         <div class="footer__container">
             <span class="footer__span">RECIBÍ NUESTRAS OFERTAS</span> 
 
-            <form action="">
+            <form action="post">
                 <input class="footer__input" type="email" id="e-mail" placeholder="E-mail">
-                <label for="e-mail"><button class="footer__button" >Registrarse</button></label>
+                <label for="e-mail-footer">
+                    <button id="e-mail-footer" class="footer__button">Registrarse</button>
+                </label>
             </form>
 
             <div class="footer__social">
-                <a href="https://www.facebook.com/"><img class="footer__link" src="img/logo/FB_icon.png" alt=""></a>
-                <a href="https://www.instagram.com/"><img class="footer__link" src="img/logo/INSTAGRAM_icon.png" alt=""></a>
-                <a href="https://wa.me/"><img class="footer__link" src="img/logo/whatsapp_icon.png" alt=""></a>
+                <a class="footer__link" href="https://www.facebook.com/">
+                    <img class="footer__image" src="img/logo/FB_icon.png" alt="facebook">
+                </a>
+                <a class="footer__link" href="https://www.instagram.com/">
+                    <img class="footer__image" src="img/logo/INSTAGRAM_icon.png" alt="instagram">
+                </a>
+                <a class="footer__link" href="https://wa.me/">
+                    <img class="footer__image" src="img/logo/whatsapp_icon.png" alt="whatsapp">
+                </a>
             </div>
+
         </div>
         <div class="footer__author">
-            <p> Desarrolado por Andres Franco</p>
+            <p> Desarrollado por Andres Franco</p>
         </div>
     </footer>
 </body>

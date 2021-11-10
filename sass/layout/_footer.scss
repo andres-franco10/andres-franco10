@@ -36,7 +36,7 @@
         padding: 6px 16px;
         text-align: center;
         text-decoration: none;
-    }
+        }
     
     &__button:hover {
         background-color: #0069D9;
@@ -57,6 +57,10 @@
         text-align: end;
         color: #777777;
         padding: 1em;
+    }
+
+    &__link {
+        display: inline-block;
     }
 }    
 
@@ -87,7 +91,7 @@
             
         }
 
-        &__link {
+        &__image {
             height: 20px;
         }
 
@@ -104,6 +108,7 @@
     }
 
 }
+
 
 
 

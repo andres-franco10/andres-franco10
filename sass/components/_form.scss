@@ -182,6 +182,11 @@ input[type='radio']:checked:after {
     border: 2px solid rgba(0, 0, 0, 0.35);
 }
 
+input[type='checkbox'] {
+    margin-left: 1em;
+    align-self: center;
+}
+
 
 @media (max-width: 425px) {
     .form {

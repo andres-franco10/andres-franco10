@@ -269,6 +269,11 @@ input[type=radio]:checked:after {
   border: 2px solid rgba(0, 0, 0, 0.35);
 }
 
+input[type=checkbox] {
+  margin-left: 1em;
+  align-self: center;
+}
+
 @media (max-width: 425px) {
   .form {
     width: 90%;
@@ -536,6 +541,9 @@ input[type=radio]:checked:after {
   color: #777777;
   padding: 1em;
 }
+.footer__link {
+  display: inline-block;
+}
 
 @media (max-width: 425px) {
   .footer__container {
@@ -556,7 +564,7 @@ input[type=radio]:checked:after {
     text-align: center;
     text-decoration: none;
   }
-  .footer__link {
+  .footer__image {
     height: 20px;
   }
   .footer__social {
