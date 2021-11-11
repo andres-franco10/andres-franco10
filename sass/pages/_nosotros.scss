@@ -1,6 +1,10 @@
+.body-us{
+    background-color: #f7f1f1;
+    padding-top: 2em;
 
+}
 
-.nosotros__container {
+.container__us {
     background-image: url(/img/logo/nosotros-background.png);
     background: cover, no-repeat;
     width: fit-content;
@@ -15,7 +19,7 @@
     margin-bottom: 2em;
 }
 
-.nosotros__title {
+.title__us {
     color: white;
     padding-top: 1em;
     margin-bottom: 1em;
@@ -24,15 +28,14 @@
 }
 
 
-.nosotros__card {
+.card__us {
     background-color: transparent;
     text-decoration: none;
-    transition: all .3s;
     display: flex;
     flex-direction: column;
 }
 
-.nosotros__card__container {
+.card__container__us {
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
@@ -45,7 +48,7 @@
     margin: .5em;
 }
 
-.nosotros__button {
+.button__us {
         background-color: #0069D9;
         border: 1px solid rgba(27, 31, 35, .15);
         border-radius: 6px;
@@ -77,8 +80,14 @@
     }
 }
 
-.nosotros__link {
+.link__us {
     color: white;
     text-decoration: none;
+}
+
+.history_container {
+    text-align: center;
+    color: #777777 ;
+    margin-bottom: 2em;
 }
 
