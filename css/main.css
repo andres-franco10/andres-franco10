@@ -366,6 +366,11 @@ input[type=checkbox] {
 }
 .search-bar__name {
   color: #4CA686;
+  -webkit-text-stroke: 0.2px #08252b;
+  text-shadow: 1px 1px 1px rgba(32, 23, 23, 0.54);
+  font-size: 2.5em;
+  font-weight: lighter;
+  padding-bottom: 10px;
 }
 .search-bar__logo-container, .search-bar__form-container {
   padding: 1em;
@@ -544,6 +549,10 @@ input[type=checkbox] {
 }
 .footer__link {
   display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+.footer__link:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 425px) {
@@ -598,6 +607,9 @@ input[type=checkbox] {
   color: #4CA686;
   margin-bottom: 0;
   background-color: #f7f1f1;
+  -webkit-text-stroke: 0.2px #08252b;
+  text-shadow: 1px 1px 1px rgba(32, 23, 23, 0.54);
+  font-weight: lighter;
 }
 @media (max-width: 425px) {
   .search-bar__name-mobile {
@@ -664,7 +676,6 @@ input[type=checkbox] {
 
 .body-us {
   background-color: #f7f1f1;
-  padding-top: 2em;
 }
 
 .container__us {
@@ -680,8 +691,6 @@ input[type=checkbox] {
   padding-right: 2em;
   border-radius: 4px;
   text-align: center;
-  margin-top: 2em;
-  margin-bottom: 2em;
 }
 
 .title__us {
@@ -747,5 +756,5 @@ input[type=checkbox] {
 .history_container {
   text-align: center;
   color: #777777;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }/*# sourceMappingURL=main.css.map */
