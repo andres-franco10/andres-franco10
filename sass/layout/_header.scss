@@ -83,7 +83,7 @@
             SEARCH BAR
 ***********************************/
 .search-bar {
-    background-color: #f1f2f3;
+    background-color: #e6eaee;
     display: flex;
     align-items: center;
     padding-left: 1em;
@@ -104,11 +104,11 @@
     }
     
     &__logo-container {
-        background-color: #f1f2f3;
+        background-color: #e6eaee;
     }
     
     &__form-container {
-        background-color: #f1f2f3;
+        background-color: #e6eaee;
         flex-basis: 100%;
         height: 4em;
         display: flex;
@@ -116,7 +116,7 @@
     }
     
     &__form-label {
-        background-color: #f1f2f3;
+        background-color: #e6eaee;
     
     }
     
@@ -134,7 +134,7 @@
         {outline: none;}
     
     &__form-submit {
-        background-color: #f1f2f3;
+        background-color: #e6eaee;
         border: none;
         cursor: pointer;
     }
@@ -147,7 +147,7 @@
         border-right: black;
         border-bottom: black;
         align-items: center;
-        background-color: #f1f2f3;
+        background-color: #e6eaee;
         cursor: pointer;
     }
 
@@ -205,7 +205,7 @@
     &__label {
         display: block;
         background-color: black;
-        height: 100%;
+        
     }
     
     &__top-bread,
@@ -217,6 +217,7 @@
         position: absolute;
         left: .5em;
         right: .5em;
+        
     }
     
     &__top-bread {
@@ -235,13 +236,36 @@
 
     @media (max-width: 768px) {
         & {
-            display: block;
-        }    
+            display: block;    
+        }  
+        .nav-bar {
+            background-color:black;
+        } 
     }
 
     @media (max-width: 320px) {
         & {
             flex: 0 0 2.7em;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        background-color:#eff3f7;
+    } 
+}
+
+.search-bar__name-mobile {
+    display: none;
+    color: #4CA686;
+    margin-bottom: 0;
+    background-color: #f7f1f1;
+    -webkit-text-stroke: .2px rgb(8, 37, 43);
+    text-shadow: 1px 1px 1px rgba(32,23,23,0.54);
+    font-weight: lighter;
+
+    @media (max-width: 425px) {
+        & {display:block;}
     }
 }

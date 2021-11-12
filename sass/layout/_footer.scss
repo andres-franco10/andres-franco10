@@ -9,6 +9,10 @@
         height: 4em;
     }
 
+    &__form{
+        text-align: center;
+    }
+
     &__input {
         background-color: #f7f1f1;
         border-radius: 2px;
@@ -66,6 +70,11 @@
             transform: scale(1.1);
         }
     }
+
+    &__social {
+        display: flex;
+        gap: 35%;
+    }
 }    
 
 
@@ -102,7 +111,7 @@
         &__social {
             width: 7em;
             display: flex;
-            justify-content: flex-end;
+            gap: 10%;
         }
 
         &__author {
@@ -110,8 +119,15 @@
         }
     
     }
-
 }
+@media (max-width: 768px) {
+    .footer__social {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
 
 
 
