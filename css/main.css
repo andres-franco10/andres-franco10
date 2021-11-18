@@ -702,7 +702,7 @@ input[type=checkbox] {
 }
 
 .container__us {
-  background-image: url(/img/logo/nosotros-background.png);
+  background-image: url(../../img/logo/nosotros-background.png);
   background: cover, no-repeat;
   width: -webkit-fit-content;
   width: -moz-fit-content;
