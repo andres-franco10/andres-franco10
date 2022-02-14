@@ -1,0 +1,24 @@
+[
+	{
+		"nombre": "cambio",
+		"precio": "123",
+		"stock": "123",
+		"marca": "123",
+		"categoria": "123",
+		"detalles": "123",
+		"foto": "123",
+		"envio": true,
+		"id": "1"
+	},
+	{
+		"nombre": "cambio ",
+		"precio": "12323",
+		"stock": "123",
+		"marca": "cambio ",
+		"categoria": "cambio ",
+		"detalles": "cambio ",
+		"foto": "cambio",
+		"envio": false,
+		"id": "3"
+	}
+]

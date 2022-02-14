@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="main-header">
+        <input type="checkbox" id="menu">
+        <nav class="nav-bar">
+            
+            <ul class="nav-bar__nav-list">
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="" id="inicio">Inicio</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="" id="alta">Alta</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="" id="contacto">Contacto </a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="" id="nosotros">Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <h1 class="search-bar__name" >Connecticus</h1>
+            <div class="search-bar__logo-container">
+                <img src="img/logo/logo1(Personalizado).png" alt="logo">
+            </div>
+            <form class="search-bar__form-container">
+                <label class="search-bar__form-label" for="busqueda"></label>
+                <input class="search-bar__form-search" id="busqueda" type="search" placeholder="¿Qué Estás Buscando?">
+                <input class="search-bar__form-submit" type="submit" value="🔍">
+            </form>
+            <div class="search-bar__carrito-container">
+                🛒
+            </div><span class="search-bar__contador-productos">0</span>
+            <div class="menu-toggle">
+                <label class="menu-toggle__label" for="menu">
+                    <span class="menu-toggle__top-bread"></span>
+                    <span class="menu-toggle__meat"></span>
+                    <span class="menu-toggle__bottom-bread"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <!--ZONA DE MENU MODAL DEl Carrito-->
+
+    <div class="section-carrito"></div>
+
+
+
+    <!--ZONA DE INYECCIÓN DE PLANTILLAS SPA-->
+    <main></main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <span class="footer__span">RECIBÍ NUESTRAS OFERTAS </span> 
+
+            <form action="post">
+                <input class="footer__input" type="email" id="e-mail" placeholder="E-mail">
+                <label for="e-mail-footer">
+                    <button id="e-mail-footer" class="footer__button" >Registrarse</button>
+                </label>
+            </form>
+
+            <div class="footer__social">
+                <a class="footer__link" href="https://www.facebook.com/" target="_blank">
+                    <img class="footer__image" src="img/logo/FB_icon.png" alt="facebook">
+                </a>
+                <a class="footer__link" href="https://www.instagram.com/" target="_blank">
+                    <img class="footer__image" src="img/logo/INSTAGRAM_icon.png" alt="instagram">
+                </a>
+                <a class="footer__link" href="https://wa.me/" target="_blank">
+                    <img  class="footer__image" src="img/logo/whatsapp_icon.png" alt="whatsapp">
+                </a>
+            </div>
+        </div>
+        <div class="footer__author">
+            <p> &copy; 2022 Desarrollado por Andres Franco</p>
+        </div>
+    </footer>
+
+    <!--Zona de Scripts-->
+
+    <!-- Script de Clientes-->
+    <script src="js/clientes/http.js"></script>
+    
+    <!-- Script de servicios-->
+    <script src="js/servicios/productos.js"></script>
+    <script src="js/servicios/carrito.js"></script>
+
+    <!-- Script e Modelos-->
+    <script src="js/modelos/productos.js"></script>
+    <script src="js/modelos/carrito.js"></script>
+
+    <!-- Script de  controladores-->
+    <script src="js/controladores/productos.js"></script>
+    <script src="js/controladores/carrito.js"></script>
+
+    <!-- Scripts de Plantillas-->
+    <script src="js/menu/inicio.js"></script>
+    <script src="js/menu/alta.js"></script>
+    <script src="js/menu/contacto.js"></script>
+    <script src="js/menu/nosotros.js"></script>
+    <script src="js/menu/carrito.js"></script>
+
+    <!--Librerias-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Script de Arranque-->
+    <script src="js/main.js"></script>
+</body>
+</html>

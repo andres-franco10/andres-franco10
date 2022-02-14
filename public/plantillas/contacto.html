@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+
+    <main class="main-form">
+        <h1 class="search-bar__name-mobile">Connecticus</h1>
+
+        <div class="contact">
+            <h2 class="contact__title">¿Necesitas ayuda? te asesoramos</h2>
+            <p class="contact__title__caption">Llamanos ó escribinos, estamos para ayudarte</p>
+            <div class="contact__buttons">
+                <a href="tel:54293847239" target="_blank" class="contact__link">
+                    <img src="img/logo/logo-llamada.png" alt="llamada" >
+                </a>
+                <a href="https://wa.me/" target="_blank"class="contact__link">
+                    <img src="img/logo/whatsapp-logo-11.png" alt="whatsapp" >
+                </a>
+            </div>
+            <div class="contact__text">
+                <p>Llamanos al 
+                    <a class="contact__link" href="tel:54293847239" target="_blank">
+                    +54872619
+                    </a>
+                </p>
+                <p>Escribinos al  
+                    <a class="contact__link" href="https://wa.me/" target="_blank">
+                        Whatsapp
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <form action="post" >
+            <fieldset class="form">
+                <label class="form__label" for="nombre">Nombre</label>
+                <input class="form__input" type="text" name="nombre" id="nombre" required>
+                <label class="form__label" for="e-mail-form">E-mail</label>
+                <input class="form__input" type="email" id="e-mail-form" required placeholder="juan@dominio.com">
+                
+                <fieldset class="form__fieldset"> 
+                    <legend class="form__legend">
+                        <label class="form__label" for="comentario">Comentario</label>
+                    </legend>
+                    <textarea class="form-text" name="comentario" id="comentario" cols="50" rows="10"></textarea>
+                </fieldset>
+
+                <input class="form__submit" type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </main>
+
+
+</body>
+</html>

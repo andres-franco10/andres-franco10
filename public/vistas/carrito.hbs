@@ -1,0 +1,42 @@
+{{#if carrito.length}}
+
+<button class="btn__enviarCarrito  table-responsive" onclick="carritoController.enviarCarrito()">Finalizar compra</button>
+    <table class="table">
+        <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Marca</th>
+            <th>Foto</th>
+            <th>Cantidad</th>
+            <th>Envio</th>
+            <th>Acción</th>
+        </tr>
+
+        {{#each carrito }}
+        <tr>
+            <td>{{nombre}}</td>
+            <td>{{precio}}</td>
+            <td>{{marca}}</td>
+            <td>
+                <img src="{{foto}}" width="50" alt="{{nombre}}">
+            </td>
+            <td>{{cantidad}}</td>
+
+            {{#if envio}}
+            <td>Si</td>
+            {{else}}
+            <td>No</td>
+            {{/if}}
+
+        <td>
+                
+                <button class= "buttonDelete"onclick="carritoController.borrarProducto('{{id}}')">Borrar</button>
+        </td>
+
+        </tr>
+        {{/each}}
+
+    </table>
+{{else}}
+<h2>El carrito está vacio</h2><img height="100" src= "img/logo/caraTriste.jpg"></img>
+{{/if}}

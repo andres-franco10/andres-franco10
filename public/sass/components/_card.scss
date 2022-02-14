@@ -1,0 +1,109 @@
+
+.card {
+    text-decoration: none;
+    outline: none;
+    flex-grow: 1;
+    width: 220px;
+    max-width: 300px;
+    height: max-content;
+    overflow: hidden;
+    color: #777777;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .2), 0 0 3px rgba(0, 0, 0, .4);
+    border-radius: 9px;
+    transition: all .3s;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+    
+
+
+    &:hover,
+    &:focus {
+        -moz-transform: scale(1.03);
+        -webkit-transform: scale(1.03);
+        transform: scale(1.03) skewX();
+        -moz-transform-origin: bottom;
+        -webkit-transform-origin: bottom;
+        transform-origin: bottom;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        overflow: hidden;
+    }
+    
+    &__image-container {
+        height: 200px;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px);
+        clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px);
+    }
+    
+    &:hover &__image-container,
+    &:focus &__image-container {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px);
+        clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px);
+        overflow: hidden;
+    }
+    
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: .2s;
+    }
+    
+    &:hover &__image,
+    &:focus &__image {
+        transform: scale(1.4) rotate(5deg);
+        transform-origin: center;
+        overflow: hidden;
+    }
+    
+    &__content {
+        padding: 1em;
+        padding-bottom: 0;
+    }
+    
+    @media (max-width: 768px) {
+        & {height: 429px;}
+    }
+
+    }
+
+hr {
+    width: 3em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+.btnAgregarAlCarrito{
+    text-align: right;
+    color: #f7f1f1;
+    font-weight: bold;
+    border-radius: 6px;
+    background-color: #4CA686;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 3px;
+    padding: 4px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+        
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 12px;
+        background-color: #349674;
+        cursor: pointer;
+    }
+    &:focus{box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+            outline: none;
+    }
+    &:active {
+        border-color: rgba(13, 53, 24, 0.4) ;
+        border-style: outset 3px 3px rgba(21, 75, 36, 0.4);
+        background-color: #1c5843;
+    }
+
+}
+
+
+
+
+
+

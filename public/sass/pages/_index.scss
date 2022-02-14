@@ -1,0 +1,22 @@
+.section-cards {
+    background-color: #f7f1f1;
+    padding: 2em;
+    padding-top: 0;
+
+    &__header 
+    {padding: 1em;}
+}
+
+
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.active {
+    font-weight: bold;
+    color: #4CA686;
+}
