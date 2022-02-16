@@ -40,8 +40,11 @@ class CarritoController {
         // ------ Envió el carrito al backend ------
         elemSectionCarrito.innerHTML = '<h2>Realizando pedido...</h2><img height="100" src= "img/logo/pedidoRealizado.jpg"></img>'
 
-        await carritoService.guardarCarrito(carritoModel.obtener())
-  
+        let preference = await carritoService.guardarCarrito(carritoModel.obtener())
+
+        console.log(preference)
+
+
         elemSectionCarrito.innerHTML = '<h2><b>...Pedido Realizado.</b></h2><img height="100" src= "img/logo/thumbsUP.jpg"></img> '
 
 
@@ -50,10 +53,12 @@ class CarritoController {
         localStorage.setItem('carrito', carritoModel.obtener())
 
         // ------ cierro la ventana del menú del carrito un tiempo después ------
-        setTimeout(() => {
+        setTimeout(async() => {
             elemSectionCarrito.classList.remove('section-carrito--visible')
             mostrarCarrito = false
-        },2000)
+
+            await renderPago(preference)
+        },0)
     }
 }
 

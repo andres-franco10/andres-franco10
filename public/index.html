@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="css/main.css">
+ 
 </head>
 <body>
     <header class="main-header">
@@ -39,7 +40,7 @@
             </form>
             <div class="search-bar__carrito-container">
                 🛒
-            </div><span class="search-bar__contador-productos">0</span>
+            </div><span class="search-bar__contador-productos"></span>
             <div class="menu-toggle">
                 <label class="menu-toggle__label" for="menu">
                     <span class="menu-toggle__top-bread"></span>
@@ -53,6 +54,10 @@
     <!--ZONA DE MENU MODAL DEl Carrito-->
 
     <div class="section-carrito"></div>
+
+    <!--ZONA DE FORMULARIO DE PAGO-->
+
+    <div class="section-pago"></div>
 
 
 
@@ -88,9 +93,10 @@
     </footer>
 
     <!--Zona de Scripts-->
-
+    <!-- // SDK MercadoPago.js V2-->
+    <script src="https://sdk.mercadopago.com/js/v2"></script>  
     <!-- Script de Clientes-->
-    <script src="js/clientes/http.js"></script>
+    <script src="js/clientes/http.js"></script> 
     
     <!-- Script de servicios-->
     <script src="js/servicios/productos.js"></script>
@@ -110,6 +116,8 @@
     <script src="js/menu/contacto.js"></script>
     <script src="js/menu/nosotros.js"></script>
     <script src="js/menu/carrito.js"></script>
+
+    <script src="js/menu/pago.js"></script>
 
     <!--Librerias-->
 
