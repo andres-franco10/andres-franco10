@@ -39,32 +39,8 @@ function agregarAlCarrito (id) {
                 seAgregoAlCarrito.innerHTML = ''
                 this.style.marginBottom = '20px'
 
-                },850)
-
-                
-    }
-
-
-    
-    // document.querySelectorAll('.btnAgregarAlCarrito').forEach(btnAgregarAlCarrito=> btnAgregarAlCarrito.addEventListener('click', cartNumbers))
-
-    // function cartNumbers() {
-  
-    //     let productNumbers = localStorage.getItem('cartNumbers')
-
-    //     productNumbers = parseInt(productNumbers)
-
-    //     console.log (productNumbers)
-
-    //     if (productNumbers) {
-    //         localStorage.setItem('cartNumbers', productNumbers + 1);
-    //         document.querySelector('.search-bar__contador-productos').textContent = productNumbers + 1;
-    //     } else {
-    //         localStorage.setItem('cartNumbers', 1);
-    //         document.querySelector('.search-bar__contador-productos').textContent = 1;
-    //     }
-
-    // }
+                },850)    
+    }   
 }
 
 
